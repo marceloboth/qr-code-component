@@ -11,13 +11,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 152px 0px 152px 0px;
+    padding: 152px 0;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 85px 0;
+    }
 }
 
 .card-container {
     width: 320px;
     height: 497px;
-    flex-shrink: 0;
     border-radius: 20px;
     background-color: hsl(0, 0%, 100%);
     box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
@@ -28,34 +33,29 @@
     height: 288px;
     padding: 16px;
     border-radius: 25px;
-    flex-shrink: 0;
+}
+
+h1, p {
+    width: 288px;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Outfit', sans-serif;
 }
 
 h1 {
-    width: 288px;
     color: hsl(218, 44%, 22%);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: 'Outfit', sans-serif;
     font-size: 22px;
-    font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
+    padding: 0 16px 16px 16px;
 }
+
 p {
     width: 256px;
     color: hsl(220, 15%, 55%);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: 'Outfit', sans-serif;
     font-size: 15px;
-    font-style: normal;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0.188px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
 }
